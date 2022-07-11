@@ -1,5 +1,6 @@
-#mild challende
-age = 13
+#mild challenge
+
+age = 15
 if age.even?
   puts "Even"
 else age.odd?
