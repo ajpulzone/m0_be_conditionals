@@ -5,7 +5,7 @@
 
 door_choice = 1
 bear_clothing = ""
-bear_choice = 1
+bear_choice = 2
 
 puts "You enter a dark room with two doors. Do you go through #1 or #2?"
 
@@ -23,21 +23,40 @@ puts "2. Point it out to the bear?"
 puts "3. Make a dash for the next room?"
 
 if bear_choice == 1
-  "You offer the bear your " + bear_clothing + " and the bear shows you a secret passage out!"
+  puts "You offer the bear your " + bear_clothing + " and the bear shows you a secret passage out!"
 elsif bear_choice == 2
-  "You tell the bear the " + bear_clothing + " is too small and it starts to cry!"
+  puts "You tell the bear the " + bear_clothing + " is too small and it starts to cry!"
 elsif bear_choice == 3
-  "You run as fast as you can into the next room. It's full of snakes!"
+  puts "You run as fast as you can into the next room. It's full of snakes!"
 else
-  "You stay with the bear and become it's best friend!"
+  puts "You stay with the bear and become it's best friend!"
 end
 
 
 # Questions
 # 1. In English, using technical vocabulary, describe what is happening between lines 12 and 16.
+# *We are defining the string contained within the bear_clothing variable based on
+# the door_choice integer chosen.
+
 # 2. What variable has a new value assigned to it after the first if statement executes?
+# *bear_clothing because it changes from hat to scarf depending on which integer is chosen for
+# door_choice
+
 # 3. If you changed the variable door_choice to equal 3, what would the bear_clothing value be?
+# *scarf, because the else statement encompases all answers that are not door_choice = 1
+# and if door_choice = 1, then bear_clothing would be hat.
+
 # 4. In English, using technical vocabulary, describe what is happening between lines lines 25 and 33.
+# *We are using if statements to create branches based on the value of bear_choice to give us
+# a statement output
+
 # 5. If you changed the variable bear_choice to equal 3, what will be the final outcome be?
-# 6. If you changed the variable door_choice to equal 1, and the variable bear_choice to equal 2, what will be the final outcome be?
+# *"You run as fast as you can into the next room. It's full of snakes!"
+
+# 6. If you changed the variable door_choice to equal 1, and the variable
+# bear_choice to equal 2, what will be the final outcome be?
+# *You tell the bear the hat is too small and it starts to cry!"
+
 # 7. What is your favorite ending?
+# *You stay with the bear and become it's best friend!"
+# *Anyone who does not choose this ending is a monster :) 
